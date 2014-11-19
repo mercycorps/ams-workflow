@@ -45,208 +45,178 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+			<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
 				<section>
-					<h1>OSCON 2014</h1>
 					<p>
-						<div class="qrcode" id="qrcode-git"/>
-	  <p><a href="http://glind.github.io/OSCON2014" target="_blank"
-		id="git">http://glind.github.io/OSCON2014</a></p>
-
-					  </div>
+		        <h2>AMS WORKFLOW - MVP</h2>
+		        <img src="images/AMS.png" title ="diagram">
+						<p><a href="images/AMS.pdf" target="_new">Download PDF of Diagram</a></p>
 					</p>
 				</section>
-
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-					<section>
-						<h2>Presentation Foo</h2>
-						<p>
-							Reveal.js is a framework for reating presentations in HTML.
-						</p>
-						<iframe width="850" height="600" src="http://www.oscon.com/oscon2014/public/schedule/detail/34012">
-						</iframe>
-					</section>
-          <section>
-            <h2>Export to PDF</h2>
-            <p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, below is an example that's been uploaded to SlideShare.</p>
-            <iframe id="slideshare" src="http://www.slideshare.net/slideshow/embed_code/13872948" width="455" height="356" style="margin:0;overflow:hidden;border:1px solid #CCC;border-width:1px 1px 0;margin-bottom:5px" allowfullscreen> </iframe>
-            <script>
-              document.getElementById('slideshare').attributeName = 'allowfullscreen';
-            </script>
-          </section>
-					<section>
-						<h2>Qr Code</h2>
-						<p>
-							Generate a QR code with link to your presentation.
-						</p>
-						<div class="qrcode" id="qrcode-talk"/>
-	  <p><a href="http://goo.gl/2efr3v" target="_blank"
-		id="talk">http://fghaas.github.io/oscon2014-presentationtoolbox</a></p>
-					</section>
-          <section>
-            <h2>Pretty Code</h2>
-            <pre><code data-trim contenteditable>
-              function linkify( selector ) {
-                if( supports3DTransforms ) {
-
-                  var nodes = document.querySelectorAll( selector );
-
-                  for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-                    var node = nodes[i];
-
-                    if( !node.className ) {
-                      node.className += ' roll';
-                    }
-                  }
-                }
-              }
-            </code></pre>
-            <p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-          </section>
-          <section>
-            <h2>Notes</h2>
-            <p>
-              HTML iframe from Evernote
-            </p>
-            <iframe seamless="seamless" width="850" height="600" src="notes/greg/Presentation Foo.html">
-            </iframe>
-          </section>
-				</section>
-
-        <section data-transition="linear" data-background-transition="slide">
-          <h2>Tutorial: Test Driven Development in Django</h2>
-
-          <iframe seamless="seamless" width="850" height="600" src="http://www.oscon.com/oscon2014/public/schedule/detail/34283">
-          </iframe>
-        </section>
-
-        <section data-transition="linear" data-background-transition="slide">
-          <h2>Tutorial: Hands on Data Analysis with Python<h2>
-
-          <iframe seamless="seamless" width="850" height="600" src="http://www.oscon.com/oscon2014/public/schedule/detail/34254">
-          </iframe>
-        </section>
-
-				<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
-          <section>
-            <h2>Predicting Global Unrest with Hadoop</h2>
-            <p>
-            <iframe width="850" height="600" src="http://gdeltproject.org"></iframe>
-            </p>
-          </section>
-          <section>
-            <h2>Predicting Global Unrest with Hadoop</h2>
-            <ul>
-                <li>InfiniDB - MySQL storage engine - Full MySQL syntax compatible</li>
-                <li>runs native to hadoop - file system abstraction later</li>
-                <li>Piwiki Open Source Analytics <a href="http://demo.piwik.org/index.php?module=CoreHome&action=index&idSite=7&period=day&date=yesterday#/module=Dashboard&action=embeddedIndex&idSite=7&period=day&date=yesterday&idDashboard=1">Demo</a>
-            </ul>
-          </section>
-          <section>
-          <h2>Predicting Global Unrest with Hadoop</h2>
-          <p>
-            <a href="http://gdeltproject.org">GDELTProject.org</a>
-            HTML iframe from Evernote
-          </p>
-          <iframe seamless="seamless" width="850" height="600" src="notes/greg/Predicting Global Unrest with Hadoop.html">
-          </iframe>
-          </section>
-        </section>
-
-			  <section data-background="#8c4738" data-background-transition="slide">
-          <h2>Map Box</h2>
-          <p>
-            <a href="http://mapbox.com">MapBox.com</a>
-						<ul>
-								<li>Managing an Open Source Project</li>
-						</ul>
-          </p>
-          <iframe seamless="seamless" width="850" height="600" src="notes/greg/Map Box.html">
-          </iframe>
-        </section>
-
-        <section data-background="#8c4738" data-background-transition="slide">
-          <h2>R, Hadoop and SQL</h2>
-          <p>
-            <a href="http://hadoop.org">Hadoop</a><br/>
-            HTML iframe from Evernote
-          </p>
-          <iframe seamless="seamless" width="850" height="600" src="notes/greg/R, Hadoop and SQL.html">
-          </iframe>
-        </section>
-
-        <section data-background="#8c4738" data-background-transition="slide">
-          <h2>Building a Rest Client</h2>
+			</section>
+			<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
+				<h2>Programs</h2>
+				<p>Import data from GAIT (Grant Mangement System) and Finance system through exposed API's</p>
+				<ul>
+					<li>Budget (and currency and converted to USD)</li>
+					<li>Unique identifier code (e.g. cost center)</li>
+					<li>Status: pending(???), funded, closed</li>
+					<li>Open text description fields: context, program description, program objectives</li>
+			</section>
+			<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
+				<section>
+					<h2>Indicators</h2>
+					<p>Both standard and unique indiactors can be created or imported into the system.  There should be functinality to search for commonly used indicators
+					across all programs.</p>
 					<ul>
-						<li>Issues building and maintaing a REST client to consume data</li>
-						<li>Build custom for each service not a generic reader</li>
-          <p>
-            HTML iframe from Evernote
-          </p>
-          <iframe seamless="seamless" width="850" height="600" src="notes/greg/REST.html">
-          </iframe>
-        </section>
+						<li>data format (number, percent, text, yes/no)</li>
+						<li>type (output, outcome, result, etc) (Related Field)</li>
+						<li>direction of change (increase or decrease)</li>
+						<li>location [Complex]</li>
+					      <ul>
+									<li>Should be able to derive adminstrative boundaries and names (city, village, governate etc.) from location.</li>
+									<li>Location Heirarchy Country/Province/District(Admin unit) and/or Place Name and/or Coordinates</li>
+								</ul>
+					</ul>
+				</section>
+				<section>
+					<h3>Indicator Disaggregation:</h3>
+					<ul>
+						<li>Default disaggregate levels such as “age”,“gender” and "location"</li>
+						<li>User-defined disaggregations (2.0)</li>
+						<li>Support for both cross (nested) disaggregation as well as parallel (flat) disaggregation.</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Indicator Location:</h3>
+					<p>Should allow for manual entry of place names based on pre-defined lists (Country List, Province List, Administrative Subdistict list etc.).</p>
+					<ul>
+						<li>Should allow for changes in the admin districts</li>
+						<li>Should allow for GPS points (lat,long) and lookup and auto-fill of place names through third party service</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Indicator Classification and Categorization</h3>
+					<ul>
+						<li>Associate multiple sectors with an indicator</li>
+						<li>Associate with Country Objectives</li>
+						<li>User-define tags for indicator - Global Standard Indicator and Alpha or not</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Indicator Data Acquisition:(Text Fields)</h3>
+					<p>Primary methods should be manual entry and excel file upload.  Should also include at some point (2.0?) the ability to import from JSON or XML feeds via API.</p>
+					<ul>
+						<li>Method: how data is to be collected</li>
+						<li>Source: Where would the data come from</li>
+						<li>Frequency: How frequently to collect data</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Authentication and Authorization</h3>
+					<p>If done in Python/Django we can provide a starting frameowrkthat includes integartion of our internal SSO system with the Django built in User and auth.</p>
+					<ul>
+						<li>LDAP</li>
+						<li>CoSIGN</li>
+						<li>Frequency: How frequently to collect data</li>
+					</ul>
+				</section>
+			</section>
 
-        <section data-background="#8c4738" data-background-transition="slide">
-          <h2>Big Data Analysis 0-60 in 90 days</h2>
-          <p>
-            HTML iframe from Evernote
-          </p>
-          <iframe seamless="seamless" width="850" height="600" src="notes/greg/Big Data analysis 0-60 in 90 days.html">
-          </iframe>
-        </section>
+			<section data-background="#4d7e65" data-background-transition="slide">
+				<h2>Results Framework</h2>
+				<p>Each program has a unique framework. Indicators are linked to one or many levels of the heirarchy or one or many frameworks.<p>
 
-        <section data-background="#8c4738" data-background-transition="slide">
-            <h2>The Full Stack Java Developer (SPRING BOOT)</h2>
-            <p>
-                Streamlines the Java SPRING framework and improves certain pain points including working ith JPA/JDO
-                XML configuration, and building APIs.
+				<ul>
+					<li>Program specifc Framework with inidcators grouped sector</li>
+					<li>COuntry specific Framework with indicators grouped by country objectives (goals)<li>
+					<li>Region or Organization specifc frameworks grouped by sector, region, country etc.</li>
+				</ul>
+			</section>
 
-                Modular functionality. You can add certain libraries for adding more functionality into your app. Sort or
-                like apps in Django or modules in Drupal.
-                <a href="http://www.oscon.com/oscon2014/public/schedule/detail/33875">OSCON session link</a>
-            </p>
-            <iframe seamless="seamless" width="850" height="600" src="http://projects.spring.io/spring-boot/"></iframe>
-        </section>
-        <section data-background="#8c4738" data-background-transition="slide">
-            <h2>tmux - A Multiplexer's Multiplexer</h2>
-            <ul>
-               <li> A program that allows you to access multiple separate terminal sessions inside a single terminal window.</li>
-               <li> Great for productivity.</li>
-               <li> Start a program in a session, detach the session and the program keeps running and you can reattach</li>
-               <li> Can collaborate with remote users</li>
-               <li> so much more and it can be configured with vim key-binding</li>
+			<section data-background="#4d7e65" data-background-transition="slide">
+				<h2>Reports</h2>
+				<p>Set of canned reports that should allow for a certain amount of filtering and searching.  There should be a facility to get reports for a specific region, country or sector.<p>
 
-                <a href="http://www.oscon.com/oscon2014/public/schedule/detail/34849">OSCON Tmux</a>
-            </ul>
-            <iframe seamless="seamless" width="850" height="600" src="http://tmux.sourceforge.net/"></iframe>
-        </section>
-        <section data-background="#8c4738" data-background-transition="slide">
-            <h2>Writing non-blocking code in Javascriptr</h2>
-            <p>
-                The botttom line was callbacks suck when making ajax requests. Use promises, instead.
-            </p>
-            <iframe seamless="seamless" width="850" height="600" src="http://www.oscon.com/oscon2014/public/schedule/detail/34198"></iframe>
-        </section>
-        <section data-background="#8c4738" data-background-transition="slide">
-            <h2>Building Modern WebApps with Play Framework and Scala</h2>
-            <p>
-                Scala is an object functional programming lanaguage.</br>
-                Inspired by criticism of Java and compiles to same bytecode as Java</br>
-            </p>
-            <iframe seamless="seamless" width="850" height="600" src="http://www.oscon.com/oscon2014/public/schedule/detail/34104"></iframe>
-        </section>
-        <section data-background="#8c4738" data-background-transition="slide">
-            <h2>XSS and SQL Injections: The Tip of the Web Security Iceberg</h2>
-            <ul>
-                <li>Same-Origin-Policy SQL-Injection</li>
-                <li>Time-based SQL injection</li>
-                <li>￼Pixel Perfect <a href="http://contextis.co.uk/services/research/white-papers/pixel-perfect-timing-attacks-html5/">description</a></li>
-                <li>Clickjacking</li>
-                <li>Content Security-Policy <a href="http://homakov.blogspot.com/2014/01/using-content-security-policy-for-evil.html">description</a></li>
-                <li></li>
-            </ul>
-            <iframe seamless="seamless" width="850" height="600" src="http://www.oscon.com/oscon2014/public/schedule/detail/33485"></iframe>
-        </section>
+					<ul>
+						<li>Monthly Program reports (basic map of activity areas and graph or progress of Targets vs. Actuals)</li>
+						<li>Donor Specific report<li>
+					</ul>
+			</section>
+
+			<section data-background="#4d7e65" data-background-transition="slide">
+		    <section>
+					<h2>AMS 2.0</h2>
+					<ul>
+						<li>Add indicator to sector library</li>
+						<li>Select indicator from library and use for program</li>
+						<li>Visualizations</li>
+						<li>Portfolio dashboard
+						<li>Aggregation</li>
+						<li>Integration	Authentication & Authorization ; Data API	A secure RESTful API that allows access to the put,get and delete indicators
+						<li>Report Generation	TSU report	Ability to generate preformatted simple reports, and to export data into excel for additional reports. (Include TVA report by Sector across countires / regions)
+						<li>Search Functions		Ability to search across programs globally for all uses of indicators, ability to search by tags;
+					</ul>
+				</section>
+				<section>
+					<h3>Add indicator to sector library</h3>
+					<p>
+						The indicator library will be an external tool that will create sets of defined reuseable indicators to be shared back to the Indicator Data Collection tool.
+						Select indicator from library and use for program		A reusable indicator should be selected from a the tool and be able shared into the indicator data collection tool.  This indicators can be required for a specifc type of program or not, and should auto-create tags and sectors in the program once selected.
+				  </p>
+				</section>
+				<section>
+					<h3>Add indicator to sector library</h3>
+					<p>The indicator library will be an external tool that will create sets of defined reuseable indicators to be shared back to the Indicator Data Collection tool.</p>
+				</section>
+				<section>
+					<h3>Visualizations</h3>
+					<p>Create more visualizations for reports. Heat Map report based on actuals data over time. Targets vs Actuals graph for standard indicators.</p>
+				</section>
+				<section>
+					<h3>Visualizations</h3>
+					<p>Create more visualizations for reports. Heat Map report based on actuals data over time. Targets vs Actuals graph for standard indicators.</p>
+				</section>
+				<section>
+					<h3>Portfolio dashboard</h3>
+					<p>
+						Users can select program and/or indicators as part of a custom portfolio or access a default porfoltio (country, region) 	Program, Country, Region and Global Indicator dashboards with rollups and aggregations for standard indicators.
+					</p>
+				</section>
+				<section>
+					<h3>Aggregation</h3>
+					<p>
+						Results of standard indicators are aggregated across programs, countries, regions
+					</p>
+				</section>
+				<section>
+					<h3>Portfolio dashboard</h3>
+					<p>
+						Users can select program and/or indicators as part of a custom portfolio or access a default porfoltio (country, region) 	Program, Country, Region and Global Indicator dashboards with rollups and aggregations for standard indicators.
+					</p>
+				</section>
+				<section>
+					<h3>Aggregation</h3>
+					<p>
+						Results of standard indicators are aggregated across programs, countries, regions
+					</p>
+				</section>
+				<section>
+					<h3>Integrations and API</h3>
+					<p>
+						<li>Data API	A secure RESTful API that allows access to the put,get and delete indicators</li>
+						<li>Add connections to finanace and grants management system</li>
+					</p>
+				</section>
+				<section>
+					<h3>Aggregation</h3>
+					<p>
+						Results of standard indicators are aggregated across programs, countries, regions
+					</p>
+				</section>
+			</section>
+
+
 
 			</div>
 
