@@ -72,19 +72,18 @@
 			</section>
 			<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
 				<h2>Programs</h2>
-				<p>Import data from GAIT (Grant Mangement System) and Finance system through exposed API's</p>
+				<p>Import data from GAIT (Grant Mangement System) system through exposed API</p>
 				<ul>
-					<li>Budget (and currency and converted to USD)</li>
 					<li>Unique identifier code (e.g. cost center)</li>
 					<li>Status: pending(???), funded, closed</li>
 					<li>Open text description fields: context, program description, program objectives</li>
+				</ul>
 			</section>
 			<section data-transition="linear" data-background="#4d7e65" data-background-transition="slide">
 				<section>
 					<h2>Indicators</h2>
-					<p>Both standard and unique indicators can be created into the system.  The use of an Indicator in a Program should create a unique instance of the inidcator.
-					There should be functionality to search for commonly used indicators
-					across all programs.</p>
+					<p>Both standard and custom indicators can be created into the system.  The use of an Indicator in a Program should create a unique instance of the inidcator.
+					There should be functionality to search all indicators, and report out and aggregate any commonly used instances.</p>
 					<ul>
 						<li>data format (number, percent, text, yes/no)</li>
 						<li>type (output, outcome, result, etc) (Related Field)</li>
@@ -164,12 +163,17 @@
 				<section>
 					<h3>Indicator Report</h3>
 					<p>Basic country map and results report</p>
-					<img src="images/Indicator-Report.png" title="indicator report">
+					<img src="images/Indicator-Report2.png" title="indicator report">
 				</section>
 				<section>
 					<h3>Filtered Report</h3>
 					<p>Sample filter report for one Program</p>
 					<img src="images/Filter-Report.png" title="filter report">
+				</section>
+				<section>
+					<h3>Indicator Report</h3>
+					<p>Basic country map and results report</p>
+					<img src="images/Indicator-Report.png" title="filter report">
 				</section>
 			</section>
 
@@ -198,28 +202,31 @@
 				<section>
 					<h3>Add indicator to sector library</h3>
 					<p>
-						The indicator library will create sets of defined reuseable indicators to be used or recommended during Indicator Creation.
+						The indicator sector library will create sets of defined reuseable indicators to be used or recommended during Indicator Creation.
 					</p>
 					<ul>
 						<li>Select a Standard indicator from the library and use for a program.
-						<li>Search and find custom indicators  and "vote" for it as a candidate for Standard indicators.
+						<li>Search and find custom indicators and "vote" for it as a candidate for Standard indicators.
 						<li>"Alpha" and "Standard" indicators from the library can be required for a specific type of program or not, and should auto-create tags and sectors in the program once selected.</li>
 					</ul>
 				</section>
 				<section>
 					<h3>Visualizations</h3>
-					<p>Create more visualizations for reports. Heat Map report based on actuals data over time. Targets vs Actuals graph for standard indicators.</p>
+					<p>Create more visualizations for reports. Heat Map report based on actuals data over time. Targets vs Actuals graph for indicators.</p>
 				</section>
 				<section>
 					<h3>Portfolio dashboard</h3>
 					<p>
 						Users can select program and/or indicators as part of a custom portfolio or access a default portfolio (country, region) 	Program, Country, Region and Global Indicator dashboards with rollups and aggregations for standard indicators.
 					</p>
+					<ul>
+						<li>Bookmarking - Create a per-user portfolio of tracked programs.</li>
+					</ul>
 				</section>
 				<section>
 					<h3>Aggregation</h3>
 					<p>
-						Results of standard indicators are aggregated across programs, countries, regions
+						Results of standard indicators are aggregated across programs, countries, regions with the ability to drill down to see each unique instance of the standard indicator, including program and country.
 					</p>
 				</section>
 				<section>
